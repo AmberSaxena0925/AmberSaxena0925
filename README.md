@@ -1,6 +1,6 @@
 - 👋 Hey, I’m Amber Saxena
 - 👀 I’m interested in web development.
-- 😄 I’m currently persuing BCA from chandigarh university.
+- 😄 I’m currently persuing BCA from Chandigarh University.
 - 🌱 I’m currently learning DSA.
 - 💞️ I’m looking to collaborate on coding.
 - 📫 How to reach me by instagram and linkedIn.
