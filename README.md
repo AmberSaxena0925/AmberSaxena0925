@@ -2,6 +2,7 @@
 I am Amber Saxena, a passionate and dedicated Bachelor of Computer Applications (BCA) student with a keen interest in technology, software development, and cybersecurity. Currently pursuing my degree at Chandigarh University, I am eager to explore and learn the ever-evolving world of computer science and enhance my skills in programming, web development, and network security.  <br><br>With a strong foundation in languages like C, Java, Python, and web technologies such as HTML, CSS, JavaScript, and React, I aim to build innovative solutions and contribute to the tech industry. My academic journey has not only equipped me with technical knowledge but also helped me develop problem-solving abilities and logical thinking.  <br><br>I am always open to learning new technologies and collaborating on exciting projects that challenge my skills. Looking forward to opportunities where I can apply my knowledge, grow as a professional, and make a meaningful impact in the field of technology.
 
 
+
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/amber-saxena-b912a8260/ ) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/amber_092504) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ambersaxena0925@gmail.com) 
 
