@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber Saxena — Front-End & Cloud Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['Space Grotesk', 'Inter', 'sans-serif']
+        },
+        colors: {
+          canvas: '#F6F5F0',
+          dark: '#14151A'
+        }
+      }
+    }
+  };
+</script>
+</head>
+<body>
+
+<header class="w-full px-6 md:px-12 pt-8 pb-4 flex items-center justify-between z-20" data-purpose="header-navigation">
+  <div class="flex items-center">
+    <div class="inline-flex items-center gap-2.5 px-4 py-2 bg-white rounded-full border border-neutral-200/70 shadow-sm text-[13px] font-bold text-neutral-700">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#22C55E]"></span>
+      </span>
+      <span>Available for freelance work</span>
+    </div>
+  </div>
+  <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-8 lg:gap-10 text-[14px] font-bold text-neutral-800">
+    <a class="hover:text-black transition-colors" href="#about">About</a>
+    <a class="hover:text-black transition-colors" href="#skills">Skills</a>
+    <a class="hover:text-black transition-colors" href="work.html">Work <span class="text-neutral-400 text-xs">[04]</span></a>
+    <a class="hover:text-black transition-colors" href="#experience">Experience</a>
+    <a class="hover:text-black transition-colors" href="project.html">Projects</a>
+    <a class="hover:text-black transition-colors" href="contact.html">Contact</a>
+  </nav>
+  <div class="flex items-center gap-3">
+    <a class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#14151A] hover:bg-neutral-800 text-white rounded-full text-[13px] font-bold shadow-md transition-transform active:scale-95 duration-150" href="contact.html">
+      <span>Let's talk</span><span aria-hidden="true">↗</span>
+    </a>
+    <button class="hidden nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="relative flex-1 flex flex-col justify-between px-6 md:px-12 pt-4 pb-12 overflow-hidden" data-purpose="hero-content">
+    <div class="w-full text-center select-none pt-4 md:pt-6 pointer-events-none z-0 tracking-tight">
+      <h1 class="font-display font-black text-[15vw] md:text-[11.5vw] lg:text-[138px] leading-[0.85] uppercase flex justify-center items-center gap-3 sm:gap-6 lg:gap-8 flex-wrap">
+        <span style="color:transparent; -webkit-text-stroke:2px #14151A;">AMBER</span>
+        <span class="text-[#14151A]">SAXENA</span>
+      </h1>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 flex justify-center pointer-events-none z-10">
+      <div class="relative w-[300px] sm:w-[380px] md:w-[460px] lg:w-[520px] max-w-full">
+        <img alt="Portrait of Amber Saxena" class="w-full h-auto object-cover object-bottom filter grayscale contrast-110 drop-shadow-sm" src="photo.png">
+      </div>
+    </div>
+    <div class="relative z-20 flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mt-auto pt-24 md:pt-40">
+      <div class="max-w-[340px] flex flex-col items-start gap-3 bg-white/70 backdrop-blur-xs md:bg-transparent rounded-xl p-2 md:p-0">
+        <h2 class="text-2xl lg:text-[28px] font-bold tracking-tight text-neutral-900 leading-tight">Front-End &amp; Cloud Developer</h2>
+        <p class="text-neutral-500 text-sm leading-relaxed font-normal">Building clear, useful digital products from first sketch through deployment.</p>
+        <a class="mt-2 inline-flex items-center gap-2 px-6 py-3 bg-[#14151A] hover:bg-neutral-800 text-white rounded-full text-[13px] font-bold shadow-sm transition-all duration-150 active:scale-95" href="contact.html">Let's collaborate <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="w-full sm:w-auto flex flex-row md:flex-col flex-wrap gap-2.5 items-end justify-start md:justify-end">
+        <a class="w-36 md:w-40 px-4 py-2.5 rounded-full border border-neutral-200/90 bg-white hover:bg-neutral-50 hover:border-neutral-300 transition-all flex items-center justify-start gap-2.5 text-[13px] font-bold text-neutral-700 shadow-sm" href="https://github.com/AmberSaxena0925" rel="noopener" target="_blank">GitHub</a>
+        <a class="w-36 md:w-40 px-4 py-2.5 rounded-full border border-neutral-200/90 bg-white hover:bg-neutral-50 hover:border-neutral-300 transition-all flex items-center justify-start gap-2.5 text-[13px] font-bold text-neutral-700 shadow-sm" href="https://www.instagram.com/amber_official.0925/" rel="noopener" target="_blank">Instagram</a>
+        <a class="w-36 md:w-40 px-4 py-2.5 rounded-full border border-neutral-200/90 bg-white hover:bg-neutral-50 hover:border-neutral-300 transition-all flex items-center justify-start gap-2.5 text-[13px] font-bold text-neutral-700 shadow-sm" href="https://www.linkedin.com/in/amber-saxena-b912a8260/" rel="noopener" target="_blank">LinkedIn</a>
+        <a class="w-36 md:w-40 px-4 py-2.5 rounded-full border border-neutral-200/90 bg-white hover:bg-neutral-50 hover:border-neutral-300 transition-all flex items-center justify-start gap-2.5 text-[13px] font-bold text-neutral-700 shadow-sm" href="https://api.whatsapp.com/send?phone=+917417672722" rel="noopener" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <p>I'm a freelance software developer with hands-on experience across front-end and back-end work. I like owning a project end-to-end — planning, building, and shipping it — and I keep clients in the loop with clear, regular communication. Recent projects span jewelry and chemical-industry websites, a live voting app for a university event, and a couple of desktop applications built from the ground up in C and C++.</p>
+      <div class="stat-list">
+        <div class="stat"><span class="num">8</span><span class="label">Client &amp; personal projects shipped</span></div>
+        <div class="stat"><span class="num">2</span><span class="label">Internships in data &amp; machine learning</span></div>
+        <div class="stat"><span class="num">4</span><span class="label">Certifications completed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p class="lede">The languages, tools, and platforms I reach for most.</p>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="chip-row">
+          <span class="chip">C</span><span class="chip">C++</span><span class="chip">Python</span>
+          <span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Web</h3>
+        <div class="chip-row">
+          <span class="chip">HTML</span><span class="chip">CSS</span>
+          <span class="chip">React.js</span><span class="chip">Front-End Development</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; tools</h3>
+        <div class="chip-row">
+          <span class="chip">AWS Cloud</span><span class="chip">Vercel</span><span class="chip">Expo</span>
+          <span class="chip">Android Studio</span><span class="chip">VS Code</span><span class="chip">MS Office</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <div class="chip-row">
+          <span class="chip">MongoDB</span><span class="chip">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Other</h3>
+        <div class="chip-row">
+          <span class="chip">Data Analysis</span><span class="chip">Digital Marketing</span>
+          <span class="chip">Project Management</span><span class="chip">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="meta">
+          <h3>Data Analyst Intern</h3>
+          <span class="dates">Jun 2026 – Jul 2026</span>
+        </div>
+        <div class="org">Reserve Infotech Private Ltd</div>
+        <ul>
+          <li>Analyzed and cleaned datasets to identify trends and support data-driven decision-making.</li>
+          <li>Built reports and visualizations to communicate insights to the team.</li>
+          <li>Applied data analysis techniques to support ongoing business reporting needs.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="meta">
+          <h3>AI / Machine Learning Intern</h3>
+          <span class="dates">Aug 2023 – Nov 2023</span>
+        </div>
+        <div class="org">1Stop.ai — E-Cell, IIT</div>
+        <ul>
+          <li>Collaborated with a cohort of interns to learn and implement machine learning algorithms, earning positive feedback from senior mentors.</li>
+          <li>Carried out data preprocessing, model training, and evaluation using Python and standard ML libraries.</li>
+          <li>Worked closely with mentors to optimize model performance and translate findings into practical outcomes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED PROJECTS (preview) -->
+  <section id="projects">
+    <div class="section-head">
+      <h2>Selected projects</h2>
+      <a href="project.html" class="btn btn-outline">View all projects ↗</a>
+    </div>
+    <div class="project-grid">
+
+      <a class="project-card" href="project-hotel-near-me.html">
+        <div class="top-row"><h3>Hotel Near Me</h3><span class="arrow">↗</span></div>
+        <p>A location-based app for discovering nearby hotels and comparing options quickly.</p>
+        <span class="tag">Web App</span>
+      </a>
+
+      <a class="project-card" href="project-sai-naman-pearls.html">
+        <div class="top-row"><h3>SAI Naman Pearls</h3><span class="arrow">↗</span></div>
+        <p>Full-stack website with SEO optimization, built for a jewelry client.</p>
+        <span class="tag">Full-Stack · Client</span>
+      </a>
+
+      <a class="project-card" href="project-on-time-services.html">
+        <div class="top-row"><h3>On-time Services</h3><span class="arrow">↗</span></div>
+        <p>Application connecting households with emergency home-repair services.</p>
+        <span class="tag">Product</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS + EDUCATION -->
+  <section id="credentials">
+    <div class="two-col">
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <h2 style="font-size:26px;">Certifications</h2>
+        </div>
+        <div class="cert-list">
+          <div class="list-row"><span class="title">Frontend Developer</span><span class="sub">Coursera<br>Mar 2025</span></div>
+          <div class="list-row"><span class="title">Leadership</span><span class="sub">LinkedIn Learning<br>Jul 2025</span></div>
+          <div class="list-row"><span class="title">Project Management</span><span class="sub">LinkedIn Learning<br>Nov 2025</span></div>
+          <div class="list-row"><span class="title">Data Analyst</span><span class="sub">LinkedIn Learning<br>Feb 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <h2 style="font-size:26px;">Education</h2>
+        </div>
+        <div class="edu-list">
+          <div class="edu-card">
+            <div class="row1"><h3>Bachelor of Computer Applications (BCA)</h3><span class="dates">2024 – 2027 (Expected)</span></div>
+            <p>Chandigarh University, Mohali, Punjab</p>
+          </div>
+          <div class="edu-card">
+            <div class="row1"><h3>12th Standard</h3><span class="dates">2022 – 2024</span></div>
+            <p>54.56%</p>
+          </div>
+          <div class="edu-card">
+            <div class="row1"><h3>10th Standard</h3><span class="dates">2020 – 2021</span></div>
+            <p>76.4%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="cta-section">
+      <div class="badge"><span class="dot"></span> Available for freelance work</div>
+      <h2>Have a project in mind?</h2>
+      <p>I take on front-end builds, full-stack client sites, and cloud-backed applications. Send a note and I'll get back to you within a day or two.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-solid">Contact me ↗</a>
+        <a href="#" download="Amber_Saxena_Resume.pdf" class="btn btn-outline js-resume-link">Download resume ↓</a>
+      </div>
+      <div class="contact-strip">
+        <a class="pill-link" href="mailto:ambersaxena0925@gmail.com">ambersaxena0925@gmail.com</a>
+        <a class="pill-link" href="tel:+917417672722">+91 74176 72722</a>
+        <a class="pill-link" href="https://github.com/AmberSaxena0925" target="_blank" rel="noopener">GitHub</a>
+        <span class="pill-link" style="cursor:default;">English · Hindi</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Amber Saxena — built with care, and a preference for pill buttons.</p>
+</footer>
+
+<script src="nav.js"></script>
+<script src="resume.js"></script>
+</body>
+</html>

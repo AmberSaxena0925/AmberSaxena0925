@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Amber Saxena</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div data-header></div>
+
+  <main class="wrap">
+    <section class="detail-hero contact-hero">
+      <a href="index.html" class="back-link">← Back to home</a>
+      <h1>Let’s build something meaningful.</h1>
+      <p class="contact-lede">Have a product idea, a website to ship, or a system that needs a clearer front end? Send a few details and I’ll get back to you.</p>
+      <div class="detail-meta">
+        <span class="contact-status"><span class="dot"></span> Open for new projects</span>
+        <span class="chip">Freelance</span>
+        <span class="chip">Web</span>
+        <span class="chip">Cloud</span>
+        <span class="chip">Frontend</span>
+      </div>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-panel contact-panel-dark">
+        <p class="eyebrow">Start a conversation</p>
+        <h2>Good work starts with a clear brief.</h2>
+        <p class="panel-copy">Tell me what you are building, where you are stuck, and what a successful launch looks like.</p>
+        <div class="contact-details">
+          <a href="mailto:ambersaxena0925@gmail.com">ambersaxena0925@gmail.com</a>
+          <a href="tel:+917417672722">+91 74176 72722</a>
+          <span>Punjab, India · Remote worldwide</span>
+        </div>
+        <div class="cta-buttons contact-actions">
+          <a href="mailto:ambersaxena0925@gmail.com" class="btn btn-solid">Email me</a>
+          <a href="tel:+917417672722" class="btn btn-outline btn-outline-light">Call now</a>
+        </div>
+      </div>
+
+      <div class="contact-panel contact-form-panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Quick inquiry</p>
+          <span class="panel-index">01</span>
+        </div>
+        <h2>What can I help you ship?</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE">
+          <input type="hidden" name="subject" value="New inquiry from ambersaxena.com">
+          <input type="checkbox" name="botcheck" class="hidden-field" style="display:none">
+          <div class="contact-fields">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required>
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <div class="cta-buttons contact-actions">
+            <button type="submit" class="btn btn-solid">Send inquiry</button>
+          </div>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Amber Saxena — built with care, and a preference for pill buttons.</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      status.textContent = '';
+      status.className = 'form-status';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        const result = await res.json();
+
+        if (result.success) {
+          status.textContent = 'Thanks — your message has been sent. I\'ll get back to you soon.';
+          status.classList.add('form-status-success');
+          form.reset();
+        } else {
+          throw new Error(result.message || 'Something went wrong.');
+        }
+      } catch (err) {
+        status.textContent = 'Something went wrong sending your message. Please email me directly instead.';
+        status.classList.add('form-status-error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send inquiry';
+      }
+    });
+  </script>
+</body>
+</html>
