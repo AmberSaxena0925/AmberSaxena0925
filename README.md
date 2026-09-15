@@ -1,9 +1,9 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=1F2937&size=28&center=true&vCenter=true&width=600&height=50&lines=Hey!+I'm+Amber;Freelance+Software+Developer;Front-End+%26+Cloud;Always+learning)
 
-<h1 align="center">Hi, I'm Amber Saxena</h1>
+<h1 align="center">Hi, I'm AmberSaxena</h1>
 <p align="center">
   <strong>Amber Saxena · Freelance Software Developer</strong><br/>
-  Front-End & Cloud · React.js · AWS · Mohali, Punjab
+  Full Stack Developer & Cloud · React.js · AWS · Mohali, Punjab
 </p>
 
 <p align="center">
