@@ -9,6 +9,8 @@
   <strong>Amber Saxena · Freelance Software Developer</strong><br/>
   Front-End & Cloud · React.js · AWS · Mohali, Punjab
 </p>
+<img width="1896" height="1077" alt="image" src="https://github.com/user-attachments/assets/ce399c33-98e4-4713-9669-55cfd37a08cb" />
+
 
 <p align="center">
   <a href="https://github.com/AmberSaxena0925" target="_blank"><img src="https://img.shields.io/badge/GitHub-AmberSaxena0925-181717?style=flat&logo=github&logoColor=white"/></a>
